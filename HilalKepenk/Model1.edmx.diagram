@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0884c4e5df794558a46787359fcbae0f" Name="Diagram1">
+        <EntityTypeShape EntityType="DBHilalKepenkModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLADMIN" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLCARI" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLFATURABILGI" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLFATURADETAY" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLGIDER" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLHAREKET" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLNOTLAR" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLPERSONEL" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLSERVISTAKIP" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLURUN" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="DBHilalKepenkModel.FK_TBLFATURABILGI_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="DBHilalKepenkModel.FK_TBLHAREKET_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="DBHilalKepenkModel.FK_TBLSERVISTAKIP_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="DBHilalKepenkModel.FK_TBLFATURABILGI_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="DBHilalKepenkModel.FK_TBLFATURADETAY_TBLFATURABILGI" ManuallyRouted="false" />
+        <AssociationConnector Association="DBHilalKepenkModel.FK_TBLHAREKET_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="DBHilalKepenkModel.FK_TBLSERVISTAKIP_TBLPERSONEL" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.ilceler" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DBHilalKepenkModel.TBLIL" Width="1.5" PointX="10.375" PointY="9.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
