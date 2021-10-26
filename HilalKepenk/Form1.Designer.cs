@@ -155,7 +155,8 @@ namespace HilalKepenk
             this.ribbonPage7,
             this.ribbonPage8,
             this.ribbonPage9});
-            this.ribbonControl1.Size = new System.Drawing.Size(1920, 183);
+            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
+            this.ribbonControl1.Size = new System.Drawing.Size(1920, 161);
             // 
             // BtnUrunListesiFormu
             // 

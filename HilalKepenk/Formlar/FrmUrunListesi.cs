@@ -22,9 +22,24 @@ namespace HilalKepenk.Formlar
         private void FrmUrunListesi_Load(object sender, EventArgs e)
         {
             // List To-List
-            var degerler = db.TBLURUN.ToList();
-            gridControl1.DataSource = degerler;
+            //var degerler = db.TBLURUN.ToList();
+          
 
+            var degerler = from u in db.TBLURUN
+                           select new
+                           {
+                               u.ID,
+                               u.AD,
+                               ALISFIYAT = u.ALISFIYAT+ "$",
+                               SATISFIYAT = u.SATISFIYAT+ "$",
+                               FARK = u.SATISFIYAT-u.ALISFIYAT + "$",
+                               u.STOK,
+                               u.KATEGORI,
+                               u.MARKA,
+                               u.BIRIM,
+                               u.URUNKODU,
+                           };
+            gridControl1.DataSource = degerler.ToList();
 
         }
 
@@ -71,7 +86,7 @@ namespace HilalKepenk.Formlar
             if (gridView1.GetFocusedRowCellDisplayText("ID").ToString() != "")
             {
                 int id = int.Parse(gridView1.GetFocusedRowCellValue("ID").ToString());
-                if (id > 29)
+                if (id > 32)
                 {
                 var deger = db.TBLURUN.Find(id);
                 db.TBLURUN.Remove(deger);
@@ -94,7 +109,7 @@ namespace HilalKepenk.Formlar
             if (gridView1.GetFocusedRowCellDisplayText("ID").ToString() != "")
             {
                 int id = int.Parse(gridView1.GetFocusedRowCellDisplayText("ID").ToString());
-                if(id > 29)
+                if(id > 32)
                 {
                     var deger = db.TBLURUN.Find(id);
                     deger.AD = txtUrunAd.Text;

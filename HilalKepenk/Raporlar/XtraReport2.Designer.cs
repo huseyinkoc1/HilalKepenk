@@ -164,11 +164,16 @@ namespace HilalKepenk.Raporlar
             // 
             // detailTable
             // 
+            this.detailTable.BackColor = System.Drawing.Color.Empty;
+            this.detailTable.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.detailTable.LocationFloat = new DevExpress.Utils.PointFloat(25F, 0F);
             this.detailTable.Name = "detailTable";
             this.detailTable.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.detailTableRow});
             this.detailTable.SizeF = new System.Drawing.SizeF(763.9999F, 23F);
+            this.detailTable.StylePriority.UseBackColor = false;
+            this.detailTable.StylePriority.UseBorderColor = false;
+            this.detailTable.StylePriority.UseBorders = false;
             this.detailTable.StylePriority.UseFont = false;
             // 
             // detailTableRow
