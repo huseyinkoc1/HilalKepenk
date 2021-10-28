@@ -29,6 +29,7 @@ namespace HilalKepenk.Formlar
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFaturaPdf));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -36,13 +37,24 @@ namespace HilalKepenk.Formlar
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEditUsd = new DevExpress.XtraEditors.TextEdit();
+            this.labelUsd = new System.Windows.Forms.Label();
+            this.labelEuro = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -52,6 +64,11 @@ namespace HilalKepenk.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
+            this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditUsd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -100,6 +117,7 @@ namespace HilalKepenk.Formlar
             // 
             this.panel2.BackColor = System.Drawing.Color.FloralWhite;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.guna2Panel3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureEdit6);
             this.panel2.Controls.Add(this.pictureEdit4);
@@ -108,6 +126,17 @@ namespace HilalKepenk.Formlar
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1883, 310);
             this.panel2.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label2.Location = new System.Drawing.Point(901, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 19);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Fatura Oluştur";
             // 
             // pictureEdit6
             // 
@@ -154,6 +183,134 @@ namespace HilalKepenk.Formlar
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BorderColor = System.Drawing.Color.White;
+            this.guna2Panel3.BorderThickness = 1;
+            this.guna2Panel3.Controls.Add(this.textEdit2);
+            this.guna2Panel3.Controls.Add(this.textEditUsd);
+            this.guna2Panel3.Controls.Add(this.labelUsd);
+            this.guna2Panel3.Controls.Add(this.labelEuro);
+            this.guna2Panel3.Controls.Add(this.pictureBox4);
+            this.guna2Panel3.Controls.Add(this.pictureBox3);
+            this.guna2Panel3.Controls.Add(this.label4);
+            this.guna2Panel3.Controls.Add(this.label5);
+            this.guna2Panel3.Controls.Add(this.label6);
+            this.guna2Panel3.Location = new System.Drawing.Point(200, 35);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(412, 220);
+            this.guna2Panel3.TabIndex = 30;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(125, 70);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FloralWhite;
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit2.Properties.BeepOnError = false;
+            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEdit2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.textEdit2.Properties.MaskSettings.Set("mask", "n4");
+            this.textEdit2.Size = new System.Drawing.Size(125, 26);
+            this.textEdit2.TabIndex = 30;
+            // 
+            // textEditUsd
+            // 
+            this.textEditUsd.Location = new System.Drawing.Point(125, 118);
+            this.textEditUsd.Name = "textEditUsd";
+            this.textEditUsd.Properties.Appearance.BackColor = System.Drawing.Color.FloralWhite;
+            this.textEditUsd.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.textEditUsd.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.textEditUsd.Properties.Appearance.Options.UseBackColor = true;
+            this.textEditUsd.Properties.Appearance.Options.UseFont = true;
+            this.textEditUsd.Properties.Appearance.Options.UseForeColor = true;
+            this.textEditUsd.Properties.BeepOnError = false;
+            this.textEditUsd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEditUsd.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.textEditUsd.Properties.MaskSettings.Set("mask", "n4");
+            this.textEditUsd.Properties.UseMaskAsDisplayFormat = true;
+            this.textEditUsd.Size = new System.Drawing.Size(125, 26);
+            this.textEditUsd.TabIndex = 29;
+            // 
+            // labelUsd
+            // 
+            this.labelUsd.AutoSize = true;
+            this.labelUsd.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.labelUsd.ForeColor = System.Drawing.Color.White;
+            this.labelUsd.Location = new System.Drawing.Point(119, 118);
+            this.labelUsd.Name = "labelUsd";
+            this.labelUsd.Size = new System.Drawing.Size(0, 22);
+            this.labelUsd.TabIndex = 26;
+            // 
+            // labelEuro
+            // 
+            this.labelEuro.AutoSize = true;
+            this.labelEuro.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.labelEuro.ForeColor = System.Drawing.Color.White;
+            this.labelEuro.Location = new System.Drawing.Point(119, 73);
+            this.labelEuro.Name = "labelEuro";
+            this.labelEuro.Size = new System.Drawing.Size(0, 22);
+            this.labelEuro.TabIndex = 25;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(20, 115);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(36, 43);
+            this.pictureBox4.TabIndex = 24;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(20, 67);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 43);
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Location = new System.Drawing.Point(53, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 23);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "EURO:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label5.Location = new System.Drawing.Point(74, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(210, 19);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Güncel Döviz Kuru Bilgisi";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Location = new System.Drawing.Point(52, 119);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 23);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "USD:";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -175,17 +332,6 @@ namespace HilalKepenk.Formlar
             this.label1.Size = new System.Drawing.Size(272, 19);
             this.label1.TabIndex = 23;
             this.label1.Text = "Faturaya Eklenecek Malzemeler";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.label2.Location = new System.Drawing.Point(901, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 19);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Fatura Oluştur";
             // 
             // FrmFaturaPdf
             // 
@@ -211,6 +357,12 @@ namespace HilalKepenk.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditUsd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,5 +383,16 @@ namespace HilalKepenk.Formlar
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEditUsd;
+        private System.Windows.Forms.Label labelUsd;
+        private System.Windows.Forms.Label labelEuro;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Timer timer1;
     }
 }

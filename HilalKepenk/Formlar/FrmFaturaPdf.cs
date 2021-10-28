@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace HilalKepenk.Formlar
 {
@@ -22,7 +23,7 @@ namespace HilalKepenk.Formlar
         {
             var degerler = db.TBLURUN.ToList();
             gridControl1.DataSource = degerler;
-
+            dovizGoster();
 
             var degerlerBilgi = from u in db.TBLFATURABILGI
                                 select new
@@ -116,7 +117,7 @@ namespace HilalKepenk.Formlar
             public string Miktar { get; set; }
             public string Birim { get; set; }
             public string BirimFiyat { get; set; }
-            public string Tutar { get; set; }
+            public double Tutar { get; set; }
             
 
         }
@@ -127,7 +128,7 @@ namespace HilalKepenk.Formlar
 
             
 
-            urunListesi.Add(new Urun() { UrunKodu = gridView1.GetFocusedRowCellDisplayText("URUNKODU").ToString(), Aciklama = gridView1.GetFocusedRowCellDisplayText("AD").ToString(), Miktar =  "1", Birim = gridView1.GetFocusedRowCellDisplayText("BIRIM").ToString(), BirimFiyat = gridView1.GetFocusedRowCellDisplayText("SATISFIYAT").ToString() + "₺", Tutar = gridView1.GetFocusedRowCellDisplayText("SATISFIYAT").ToString() });
+            urunListesi.Add(new Urun() { UrunKodu = gridView1.GetFocusedRowCellDisplayText("URUNKODU").ToString(), Aciklama = gridView1.GetFocusedRowCellDisplayText("AD").ToString(), Miktar =  "1", Birim = gridView1.GetFocusedRowCellDisplayText("BIRIM").ToString(), BirimFiyat = gridView1.GetFocusedRowCellDisplayText("SATISFIYAT").ToString() + "$", Tutar = double.Parse(gridView1.GetFocusedRowCellDisplayText("SATISFIYAT"))*double.Parse(textEditUsd.Text) });
 
 
             gridControl2.DataSource = urunListesi.ToList();
@@ -135,6 +136,36 @@ namespace HilalKepenk.Formlar
 
 
           
+        }
+
+
+        public void dovizGoster()
+        {
+            try
+            {
+                XmlDocument xmlVerisi = new XmlDocument();
+                xmlVerisi.Load("http://www.tcmb.gov.tr/kurlar/today.xml");
+
+
+                decimal dolar = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", "USD")).InnerText.Replace('.', ','));
+                decimal euro = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", "EUR")).InnerText.Replace('.', ','));
+
+                textEditUsd.Text = dolar.ToString();
+                textEdit2.Text = euro.ToString();
+
+
+
+
+
+
+            }
+            catch (Exception xml)
+            {
+                timer1.Stop();
+                textEditUsd.Text = "0,0000";
+                textEdit2.Text = "0,0000";
+            }
+
         }
     }
 }
