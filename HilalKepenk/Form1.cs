@@ -193,5 +193,12 @@ namespace HilalKepenk
         {
             Application.Exit();
         }
+
+        private void barButtonItem37_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGiderler fr = new Formlar.FrmGiderler();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

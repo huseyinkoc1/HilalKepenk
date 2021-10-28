@@ -29,6 +29,8 @@ namespace HilalKepenk.Formlar
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleValue formatConditionRuleValue1 = new DevExpress.XtraEditors.FormatConditionRuleValue();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUrunListesi));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -84,10 +86,15 @@ namespace HilalKepenk.Formlar
             // 
             this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(226)))));
             this.gridView1.Appearance.Row.BorderColor = System.Drawing.Color.Gray;
-            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.Appearance.Row.Options.UseBorderColor = true;
             this.gridView1.Appearance.Row.Options.UseFont = true;
+            gridFormatRule1.Name = "Format0";
+            formatConditionRuleValue1.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            formatConditionRuleValue1.Appearance.Options.UseFont = true;
+            gridFormatRule1.Rule = formatConditionRuleValue1;
+            this.gridView1.FormatRules.Add(gridFormatRule1);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
@@ -285,7 +292,7 @@ namespace HilalKepenk.Formlar
             this.txtSatisFiyat.Properties.BeepOnError = false;
             this.txtSatisFiyat.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtSatisFiyat.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtSatisFiyat.Properties.MaskSettings.Set("mask", "f");
+            this.txtSatisFiyat.Properties.MaskSettings.Set("mask", "n");
             this.txtSatisFiyat.Properties.UseMaskAsDisplayFormat = true;
             this.txtSatisFiyat.Size = new System.Drawing.Size(271, 22);
             this.txtSatisFiyat.TabIndex = 3;
@@ -307,7 +314,7 @@ namespace HilalKepenk.Formlar
             this.txtAlisFiyat.Properties.BeepOnError = false;
             this.txtAlisFiyat.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtAlisFiyat.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtAlisFiyat.Properties.MaskSettings.Set("mask", "f");
+            this.txtAlisFiyat.Properties.MaskSettings.Set("mask", "n");
             this.txtAlisFiyat.Properties.UseMaskAsDisplayFormat = true;
             this.txtAlisFiyat.Size = new System.Drawing.Size(271, 22);
             this.txtAlisFiyat.TabIndex = 2;

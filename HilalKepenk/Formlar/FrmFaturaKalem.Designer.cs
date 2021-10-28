@@ -801,7 +801,7 @@ namespace HilalKepenk.Formlar
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Name = "FrmFaturaKalem";
-            this.Text = "FrmFaturaKalem";
+            this.Text = "Fatura Kalem";
             this.Load += new System.EventHandler(this.FrmFaturaKalem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit3View)).EndInit();

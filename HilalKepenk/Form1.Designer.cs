@@ -94,6 +94,7 @@ namespace HilalKepenk
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.barButtonItem28 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -142,9 +143,10 @@ namespace HilalKepenk
             this.barButtonItem33,
             this.barButtonItem34,
             this.barButtonItem35,
-            this.barButtonItem36});
+            this.barButtonItem36,
+            this.barButtonItem37});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 40;
+            this.ribbonControl1.MaxItemId = 41;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -547,6 +549,7 @@ namespace HilalKepenk
             // 
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem20);
             this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem33);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem37);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             // 
             // ribbonPage4
@@ -648,6 +651,14 @@ namespace HilalKepenk
             this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
             this.barButtonItem4.Name = "barButtonItem4";
             // 
+            // barButtonItem37
+            // 
+            this.barButtonItem37.Caption = "Giderler";
+            this.barButtonItem37.Id = 40;
+            this.barButtonItem37.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem37.ImageOptions.SvgImage")));
+            this.barButtonItem37.Name = "barButtonItem37";
+            this.barButtonItem37.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem37_ItemClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -735,6 +746,7 @@ namespace HilalKepenk
         private DevExpress.XtraBars.BarButtonItem barButtonItem34;
         private DevExpress.XtraBars.BarButtonItem barButtonItem35;
         private DevExpress.XtraBars.BarButtonItem barButtonItem36;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem37;
     }
 }
 

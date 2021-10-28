@@ -29,37 +29,54 @@ namespace HilalKepenk.Formlar
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSatisListesi));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.Location = new System.Drawing.Point(1, 1);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1902, 753);
-            this.gridControl1.TabIndex = 1;
+            this.gridControl1.Size = new System.Drawing.Size(1846, 746);
+            this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
-            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(122)))), ((int)(((byte)(248)))));
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(226)))));
             this.gridView1.Appearance.Row.BorderColor = System.Drawing.Color.Gray;
+            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Calibri", 13.8F);
             this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.Appearance.Row.Options.UseBorderColor = true;
+            this.gridView1.Appearance.Row.Options.UseFont = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowFooter = true;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.simpleButton1.Location = new System.Drawing.Point(1853, 335);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(161, 53);
+            this.simpleButton1.TabIndex = 26;
+            this.simpleButton1.Text = "YAZDIR";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // FrmSatisListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 753);
+            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmSatisListesi";
             this.Text = "Satış Listesi";
@@ -74,5 +91,6 @@ namespace HilalKepenk.Formlar
 
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

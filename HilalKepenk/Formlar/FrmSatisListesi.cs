@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace HilalKepenk.Formlar
         DBHilalKepenkEntities db = new DBHilalKepenkEntities();
         private void FrmSatisListesi_Load(object sender, EventArgs e)
         {
+           
             var degerler = from x in db.TBLHAREKET
                            select new
                            {
@@ -31,6 +33,13 @@ namespace HilalKepenk.Formlar
                                x.URUNKODU
                            };
             gridControl1.DataSource = degerler.ToList();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            string path = "outputHL.pdf";
+            gridControl1.ExportToPdf(path);
+            Process.Start(path);
         }
     }
 }

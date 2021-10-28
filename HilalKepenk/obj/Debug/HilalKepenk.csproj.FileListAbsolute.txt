@@ -165,7 +165,6 @@ C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.For
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.Araclar.FrmNotlar.resources
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.Araclar.FrmHaberler.resources
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.FrmYeniSatis.resources
-C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.FrmSatisListesi.resources
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\bin\Debug\MessagingToolkit.QRCode.dll
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.FrmQrCode.resources
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.FrmFaturaListesi.resources
@@ -233,3 +232,5 @@ C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\bin\Debug\ru\DevExpress.X
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Raporlar.XtraReport2.resources
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.FrmFaturaPdf.resources
 C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.FrmLogin.resources
+C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.FrmGiderler.resources
+C:\Users\Hüseyin\source\repos\HilalKepenk\HilalKepenk\obj\Debug\HilalKepenk.Formlar.FrmSatisListesi.resources

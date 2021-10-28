@@ -130,6 +130,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBHilalKepenkDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DBHilalKepenkDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBHilalKepenkDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBHilalKepenkDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBHilalKepenkDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBHilalKepenkDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBHilalKepenkDataSet14.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBHilalKepenkDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -194,6 +209,12 @@
     <Compile Include="Formlar\Araclar\FrmNotlar.Designer.cs">
       <DependentUpon>FrmNotlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmSatisListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmSatisListesi.Designer.cs">
+      <DependentUpon>FrmSatisListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +269,12 @@
     <Compile Include="Formlar\FrmFaturaPdf.Designer.cs">
       <DependentUpon>FrmFaturaPdf.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmGiderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmGiderler.Designer.cs">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmIstatistik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,12 +316,6 @@
     </Compile>
     <Compile Include="Formlar\FrmRaporSihirbazi.Designer.cs">
       <DependentUpon>FrmRaporSihirbazi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formlar\FrmSatisListesi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formlar\FrmSatisListesi.Designer.cs">
-      <DependentUpon>FrmSatisListesi.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FrmServisKayit.cs">
       <SubType>Form</SubType>
@@ -406,6 +427,9 @@
     <EmbeddedResource Include="Formlar\Araclar\FrmNotlar.resx">
       <DependentUpon>FrmNotlar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmSatisListesi.resx">
+      <DependentUpon>FrmSatisListesi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmAnasayfa.resx">
       <DependentUpon>FrmAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -433,6 +457,9 @@
     <EmbeddedResource Include="Formlar\FrmFaturaPdf.resx">
       <DependentUpon>FrmFaturaPdf.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmGiderler.resx">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmIstatistik.resx">
       <DependentUpon>FrmIstatistik.cs</DependentUpon>
     </EmbeddedResource>
@@ -453,9 +480,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmRaporSihirbazi.resx">
       <DependentUpon>FrmRaporSihirbazi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formlar\FrmSatisListesi.resx">
-      <DependentUpon>FrmSatisListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmServisKayit.resx">
       <DependentUpon>FrmServisKayit.cs</DependentUpon>
@@ -535,6 +559,39 @@
     </None>
     <None Include="DBHilalKepenkDataSet11.xss">
       <DependentUpon>DBHilalKepenkDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DBHilalKepenkDataSet12.xsc">
+      <DependentUpon>DBHilalKepenkDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="DBHilalKepenkDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBHilalKepenkDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBHilalKepenkDataSet12.xss">
+      <DependentUpon>DBHilalKepenkDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="DBHilalKepenkDataSet13.xsc">
+      <DependentUpon>DBHilalKepenkDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="DBHilalKepenkDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBHilalKepenkDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBHilalKepenkDataSet13.xss">
+      <DependentUpon>DBHilalKepenkDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="DBHilalKepenkDataSet14.xsc">
+      <DependentUpon>DBHilalKepenkDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="DBHilalKepenkDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBHilalKepenkDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBHilalKepenkDataSet14.xss">
+      <DependentUpon>DBHilalKepenkDataSet14.xsd</DependentUpon>
     </None>
     <None Include="DBHilalKepenkDataSet2.xsc">
       <DependentUpon>DBHilalKepenkDataSet2.xsd</DependentUpon>
