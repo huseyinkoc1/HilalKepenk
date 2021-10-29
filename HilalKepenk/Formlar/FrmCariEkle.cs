@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace HilalKepenk.Formlar
 {
@@ -18,8 +19,8 @@ namespace HilalKepenk.Formlar
             InitializeComponent();
         }
         DBHilalKepenkEntities db = new DBHilalKepenkEntities();
-
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-53HGRRK\SQLEXPRESS;Initial Catalog=DBHilalKepenk;Integrated Security=True");
+        //new SqlConnection(@"Data Source=DESKTOP-53HGRRK\SQLEXPRESS;Initial Catalog=DBHilalKepenk;Integrated Security=True")
+        public static string baglanti = ConfigurationManager.ConnectionStrings["HilalKepenk.Properties.Settings.DBHilalKepenkConnectionString"].ConnectionString ;
         private void FrmCariEkle_Load(object sender, EventArgs e)
         {
 
@@ -58,11 +59,11 @@ namespace HilalKepenk.Formlar
 
         public DataSet doldur(string sorgu)
         {
-            baglanti.Open();
+            //baglanti.Open();
             SqlDataAdapter adp = new SqlDataAdapter(sorgu, baglanti);
             DataSet ds = new DataSet();
             adp.Fill(ds);
-            baglanti.Close();
+            //baglanti.Close();
             return ds;
         }
 

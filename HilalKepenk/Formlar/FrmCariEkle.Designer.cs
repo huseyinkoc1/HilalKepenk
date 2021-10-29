@@ -282,9 +282,6 @@ namespace HilalKepenk.Formlar
             this.txtMail.Properties.Appearance.Options.UseForeColor = true;
             this.txtMail.Properties.BeepOnError = false;
             this.txtMail.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtMail.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtMail.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtMail.Properties.MaskSettings.Set("mask", "d");
             this.txtMail.Properties.NullValuePrompt = "Mail";
             this.txtMail.Size = new System.Drawing.Size(220, 26);
             this.txtMail.TabIndex = 38;

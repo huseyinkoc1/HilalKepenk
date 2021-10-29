@@ -18,11 +18,13 @@ namespace HilalKepenk.Formlar
         }
         DBHilalKepenkEntities db = new DBHilalKepenkEntities();
 
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-53HGRRK\SQLEXPRESS;Initial Catalog=DBHilalKepenk;Integrated Security=True");
+        
+        public string adres = System.IO.File.ReadAllText(@"C:\Test.txt");
+        
         private void FrmCariIller_Load(object sender, EventArgs e)
         {
-            
 
+            SqlConnection baglanti = new SqlConnection(adres);
             gridControl1.DataSource = db.TBLCARI.OrderBy(x => x.ILCE).GroupBy(y => y.ILCE).Select(z => new { ILCE = z.Key, TOPLAM = z.Count() }).ToList();
             baglanti.Open();
             SqlCommand komut = new SqlCommand("select ILCE, COUNT(*) FROM TBLCARI group by ILCE", baglanti);

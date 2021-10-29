@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.Entity.Infrastructure;
 using System.Data.OleDb;
@@ -64,14 +65,15 @@ namespace HilalKepenk.Formlar
         }
      
         
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-53HGRRK\SQLEXPRESS;Initial Catalog=DBHilalKepenk;Integrated Security=True");
+        //SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-53HGRRK\SQLEXPRESS;Initial Catalog=DBHilalKepenk;Integrated Security=True");
+        public static string baglanti = ConfigurationManager.ConnectionStrings["HilalKepenk.Properties.Settings.DBHilalKepenkConnectionString"].ConnectionString;
         public DataSet doldur(string sorgu)
         {
-            baglanti.Open();
+            //baglanti.Open();
             SqlDataAdapter adp = new SqlDataAdapter(sorgu, baglanti);
             DataSet ds = new DataSet();
             adp.Fill(ds);
-            baglanti.Close();
+            //baglanti.Close();
             return ds;
         }
 
